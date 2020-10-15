@@ -1,12 +1,8 @@
 import numpy as np
-import math
 import matplotlib.pyplot as plt
-x = np.arange(0, 6, 0.1)
-y1 = np.sin(x)
-plt.plot(x,y1,label="sin")
-plt.plot(x,y2,label="cos",linestyle = "--")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.title('sin & cos')
-plt.legend()   
+x = np.arange(-100.0, 100.0, 0.01)
+y1 = np.exp(0.01*x)*np.cos(x)
+plt.figure(1) 
+plt.subplot(211)
+plt.plot(x, y1)
 plt.show()
